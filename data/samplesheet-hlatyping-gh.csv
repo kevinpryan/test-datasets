@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2                                                                                                                          
+SAMPLE_PAIRED_END,https://raw.githubusercontent.com/kevinpryan/test-datasets/data/NA11995_SRR766010_1_fished.fastq.gz?raw=true,https://raw.githubusercontent.com/kevinpryan/test-datasets/data/NA11995_SRR766010_2_fished.fastq.gz?raw=true                                                                                                                         
+SAMPLE_SINGLE_END,https://raw.githubusercontent.com/kevinpryan/test-datasets/data/NA11995_SRR766010_1_fished.fastq.gz?raw=true,
+SRR7366586,https://raw.githubusercontent.com/kevinpryan/test-datasets/data/SRR7366586.1.fq.gz?raw=true,https://raw.githubusercontent.com/kevinpryan/test-datasets/data/SRR7366586.1.fq.gz?raw=true
