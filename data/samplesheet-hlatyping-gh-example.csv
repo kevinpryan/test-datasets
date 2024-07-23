@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2                                                                                                                          
+example_pe,https://cdn.jsdelivr.net/gh/kevinpryan/test-datasets/data/example_pe.1.fq.gz,https://cdn.jsdelivr.net/gh/kevinpryan/test-datasets/data/example_pe.2.fq.gz

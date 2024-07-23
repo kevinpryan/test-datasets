@@ -29,3 +29,26 @@ singularity pull docker://biocontainers/bedtools:v2.27.1dfsg-4-deb_cv1
 singularity shell bedtools_v2.27.1dfsg-4-deb_cv1.sif
 bedtools getfasta -fi chr6.fa -bed chr6-region.bed -fo chr6-subset.fa
 ```
+
+## example_pe.1.fq.gz example_pe.2.fq.gz
+
+Generated from example_pe.bam from nf-core/test-datasets as the paired-end fastq files had differing numbers of lines.
+
+Converted to fastq using the following:
+
+
+```
+singularity run /home/kryan/misc/useful/nextflow/nf-hlatyping/testdata/bam/biocontainers-samtools-v1.9-4-deb_cv1_dev.sif ./run.sh
+```
+
+`run.sh`
+
+```
+samtools sort -l 9 -T tmp -@ 4 -n *.bam -o - |
+    samtools fastq -c 6 /dev/stdin \
+    -1 "example_pe.1.fq.gz" \
+    -2 "example_pe.2.fq.gz" \
+    -0 /dev/null -s /dev/null -n
+```
+
+
